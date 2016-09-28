@@ -1,0 +1,155 @@
+Sub change_values()
+'
+' change_values Macro
+'
+
+'
+    Dim eng As Integer
+    Dim hindi As Integer
+    Dim maths As Integer
+    Dim science As Integer
+    Dim sst As Integer
+    
+    
+    
+    Range("B1").Select
+    Application.CutCopyMode = False
+    ActiveCell.FormulaR1C1 = "=+subject_eval!R[13]C"
+    Range("D7").Select
+    ActiveCell.FormulaR1C1 = "=+subject_eval!R[7]C[2]"
+    Range("D8").Select
+    ActiveCell.FormulaR1C1 = "=+subject_eval!R[6]C[5]"
+    Range("D9").Select
+    ActiveCell.FormulaR1C1 = "=+subject_eval!R[5]C[8]"
+    Range("D10").Select
+    ActiveCell.FormulaR1C1 = "=+subject_eval!R[4]C[11]"
+    Range("D11").Select
+    ActiveCell.FormulaR1C1 = "=+subject_eval!R[3]C[14]"
+    Range("D12").Select
+    ActiveCell.FormulaR1C1 = "=+subject_eval!R[2]C[17]"
+    Range("D13").Select
+    ActiveCell.FormulaR1C1 = "=+subject_eval!RC[20]"
+    Range("D15").Select
+    ActiveCell.FormulaR1C1 = "=+subject_eval!R[-2]C[22]"
+    Range("E7").Select
+    ActiveCell.FormulaR1C1 = "=+subject_eval!R[7]C[29]"
+    Range("E8").Select
+    ActiveCell.FormulaR1C1 = "=+subject_eval!R[6]C[32]"
+    Range("E9").Select
+    ActiveCell.FormulaR1C1 = "=+subject_eval!R[5]C[35]"
+    Range("E10").Select
+    ActiveCell.FormulaR1C1 = "=+subject_eval!R[4]C[38]"
+    Range("E11").Select
+    ActiveCell.FormulaR1C1 = "=+subject_eval!R[3]C[41]"
+    Range("E12").Select
+    ActiveCell.FormulaR1C1 = "=+subject_eval!R[2]C[44]"
+    Range("E13").Select
+    ActiveCell.FormulaR1C1 = "=+subject_eval!RC[47]"
+    Range("E15").Select
+    ActiveCell.FormulaR1C1 = "=+subject_eval!R[-2]C[49]"
+    Range("E16").Select
+    ActiveWindow.SmallScroll Down:=15
+    Range("D17").Select
+    ActiveCell.FormulaR1C1 = "=+subject_eval!R[51]C[2]"
+    Range("D18").Select
+    ActiveCell.FormulaR1C1 = "=+subject_eval!R[50]C[5]"
+    Range("D19").Select
+    ActiveCell.FormulaR1C1 = "=+subject_eval!R[49]C[11]"
+    Range("D20").Select
+    ActiveCell.FormulaR1C1 = "=+subject_eval!R[48]C[20]"
+    Range("D22").Select
+    ActiveCell.FormulaR1C1 = "=+subject_eval!R[46]C[22]"
+    Range("E17").Select
+    ActiveCell.FormulaR1C1 = "=+subject_eval!R[51]C[29]"
+    Range("E18").Select
+    ActiveCell.FormulaR1C1 = "=+subject_eval!R[50]C[32]"
+    Range("E19").Select
+    ActiveCell.FormulaR1C1 = "=+subject_eval!R[49]C[38]"
+    Range("E20").Select
+    ActiveCell.FormulaR1C1 = "=+subject_eval!R[48]C[47]"
+    Range("E22").Select
+    ActiveCell.FormulaR1C1 = "=+subject_eval!R[46]C[49]"
+    Range("E23").Select
+    ActiveWindow.SmallScroll Down:=6
+    Range("D24").Select
+    ActiveCell.FormulaR1C1 = "=+subject_eval!R[99]C[2]"
+    Range("D25").Select
+    ActiveCell.FormulaR1C1 = "=+subject_eval!R[98]C[5]"
+    Range("D26").Select
+    ActiveCell.FormulaR1C1 = "=+subject_eval!R[97]C[8]"
+    Range("D27").Select
+    ActiveCell.FormulaR1C1 = "=+subject_eval!R[96]C[11]"
+    Range("D28").Select
+    ActiveCell.FormulaR1C1 = "=+subject_eval!R[95]C[14]"
+    Range("D29").Select
+    ActiveCell.FormulaR1C1 = "=+subject_eval!R[94]C[20]"
+    Range("D31").Select
+    ActiveCell.FormulaR1C1 = "=+subject_eval!R[92]C[22]"
+    Range("E24").Select
+    ActiveCell.FormulaR1C1 = "=+subject_eval!R[99]C[29]"
+    Range("E25").Select
+    ActiveCell.FormulaR1C1 = "=+subject_eval!R[98]C[32]"
+    Range("E26").Select
+    ActiveCell.FormulaR1C1 = "=+subject_eval!R[97]C[35]"
+    Range("E27").Select
+    ActiveCell.FormulaR1C1 = "=+subject_eval!R[96]C[38]"
+    Range("E28").Select
+    ActiveCell.FormulaR1C1 = "=+subject_eval!R[95]C[41]"
+    Range("E29").Select
+    ActiveCell.FormulaR1C1 = "=+subject_eval!R[94]C[47]"
+    Range("E31").Select
+    ActiveCell.FormulaR1C1 = "=+subject_eval!R[92]C[49]"
+    Range("E32").Select
+    ActiveWindow.SmallScroll Down:=9
+    Range("D33").Select
+    ActiveCell.FormulaR1C1 = "=+subject_eval!R[145]C[2]"
+    Range("D34").Select
+    ActiveCell.FormulaR1C1 = "=+subject_eval!R[144]C[5]"
+    Range("D35").Select
+    ActiveCell.FormulaR1C1 = "=+subject_eval!R[143]C[8]"
+    Range("D36").Select
+    ActiveCell.FormulaR1C1 = "=+subject_eval!R[142]C[11]"
+    Range("D37").Select
+    ActiveCell.FormulaR1C1 = "=+subject_eval!R[141]C[20]"
+    Range("D39").Select
+    ActiveCell.FormulaR1C1 = "=+subject_eval!R[139]C[22]"
+    Range("E33").Select
+    ActiveCell.FormulaR1C1 = "=+subject_eval!R[145]C[29]"
+    Range("E34").Select
+    ActiveCell.FormulaR1C1 = "=+subject_eval!R[144]C[32]"
+    Range("E35").Select
+    ActiveCell.FormulaR1C1 = "=+subject_eval!R[143]C[35]"
+    Range("E36").Select
+    ActiveCell.FormulaR1C1 = "=+subject_eval!R[142]C[38]"
+    Range("E37").Select
+    ActiveCell.FormulaR1C1 = "=+subject_eval!R[141]C[47]"
+    Range("E39").Select
+    ActiveCell.FormulaR1C1 = "=+subject_eval!R[139]C[49]"
+    Range("E40").Select
+    ActiveWindow.SmallScroll Down:=6
+    Range("D41").Select
+    ActiveCell.FormulaR1C1 = "=+subject_eval!R[192]C[2]"
+    Range("D42").Select
+    ActiveCell.FormulaR1C1 = "=+subject_eval!R[191]C[5]"
+    Range("D43").Select
+    ActiveCell.FormulaR1C1 = "=+subject_eval!R[190]C[8]"
+    Range("D44").Select
+    ActiveCell.FormulaR1C1 = "=+subject_eval!R[189]C[11]"
+    Range("D45").Select
+    ActiveCell.FormulaR1C1 = "=+subject_eval!R[188]C[20]"
+    Range("D47").Select
+    ActiveCell.FormulaR1C1 = "=+subject_eval!R[186]C[22]"
+    Range("E41").Select
+    ActiveCell.FormulaR1C1 = "=+subject_eval!R[192]C[29]"
+    Range("E42").Select
+    ActiveCell.FormulaR1C1 = "=+subject_eval!R[191]C[32]"
+    Range("E43").Select
+    ActiveCell.FormulaR1C1 = "=+subject_eval!R[190]C[35]"
+    Range("E44").Select
+    ActiveCell.FormulaR1C1 = "=+subject_eval!R[189]C[38]"
+    Range("E45").Select
+    ActiveCell.FormulaR1C1 = "=+subject_eval!R[188]C[47]"
+    Range("E47").Select
+    ActiveCell.FormulaR1C1 = "=+subject_eval!R[186]C[49]"
+    Range("E48").Select
+End Sub
